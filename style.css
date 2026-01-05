@@ -1,3 +1,6 @@
+/* =========================
+   GLOBAL RESET
+========================= */
 * {
   margin: 0;
   padding: 0;
@@ -5,6 +8,9 @@
   font-family: Arial, sans-serif;
 }
 
+/* =========================
+   BODY – AESTHETIC BACKGROUND
+========================= */
 body {
   background:
     linear-gradient(
@@ -12,26 +18,32 @@ body {
       rgba(15, 23, 42, 0.85)
     ),
     url("images/backgrounds/mesh-bg.png");
-  background-size: cover;
+  background-size: 200% 200%;
   background-position: center;
   background-attachment: fixed;
+  animation: gradientMove 18s ease infinite;
   color: #e5e7eb;
   line-height: 1.6;
 }
 
-
+/* =========================
+   HEADER / NAVBAR
+========================= */
 header {
-  background: #020617;
+  background: rgba(2, 6, 23, 0.75);
+  backdrop-filter: blur(10px);
   position: fixed;
   width: 100%;
   top: 0;
   z-index: 1000;
   padding: 1rem 2rem;
+  border-bottom: 1px solid rgba(148,163,184,0.15);
 }
 
 nav {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 nav ul {
@@ -43,18 +55,46 @@ nav ul {
 nav a {
   color: #e5e7eb;
   text-decoration: none;
+  transition: color 0.3s ease;
 }
 
+nav a:hover {
+  color: #38bdf8;
+}
+
+/* =========================
+   HERO SECTION
+========================= */
 .hero {
   height: 100vh;
   text-align: center;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  position: relative;
+  overflow: hidden;
 }
 
 .hero span {
   color: #38bdf8;
+}
+
+/* Glow like Suraj */
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(
+    circle at top,
+    rgba(56, 189, 248, 0.35),
+    transparent 60%
+  );
+  z-index: 0;
+}
+
+.hero * {
+  position: relative;
+  z-index: 1;
 }
 
 .hero-buttons {
@@ -64,26 +104,63 @@ nav a {
   gap: 1rem;
 }
 
+/* =========================
+   BUTTONS
+========================= */
 .btn {
   background: #38bdf8;
   color: #020617;
   padding: 0.7rem 1.5rem;
-  border-radius: 6px;
+  border-radius: 8px;
   text-decoration: none;
+  font-weight: bold;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 25px rgba(56,189,248,0.45);
 }
 
 .btn-outline {
   border: 2px solid #38bdf8;
   color: #38bdf8;
   padding: 0.7rem 1.5rem;
-  border-radius: 6px;
+  border-radius: 8px;
   text-decoration: none;
+  font-weight: bold;
+  transition: background 0.3s ease, color 0.3s ease;
 }
 
+.btn-outline:hover {
+  background: #38bdf8;
+  color: #020617;
+}
+
+/* =========================
+   SECTIONS
+========================= */
 section {
   padding: 5rem 2rem;
   max-width: 1000px;
   margin: auto;
+  position: relative;
+}
+
+section::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 80%;
+  height: 1px;
+  transform: translateX(-50%);
+  background: linear-gradient(
+    to right,
+    transparent,
+    rgba(56,189,248,0.4),
+    transparent
+  );
 }
 
 h2 {
@@ -91,25 +168,22 @@ h2 {
   margin-bottom: 1rem;
 }
 
-.card {
-  background: #020617;
+/* =========================
+   GLASSMORPHISM CARDS
+========================= */
+.card,
+.project-card {
+  background: rgba(2, 6, 23, 0.6);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(148, 163, 184, 0.15);
+  border-radius: 14px;
   padding: 1rem;
-  border-radius: 8px;
 }
 
-.skills-grid {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.7rem;
-}
-
-.skills-grid span {
-  background: #1e293b;
-  padding: 0.5rem 1rem;
-  border-radius: 5px;
-}
-
-/* Timeline */
+/* =========================
+   TIMELINE
+========================= */
 .timeline {
   margin-top: 2rem;
   padding-left: 30px;
@@ -137,7 +211,9 @@ h2 {
   color: #94a3b8;
 }
 
-/* Projects */
+/* =========================
+   PROJECTS
+========================= */
 .project-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -145,8 +221,7 @@ h2 {
 }
 
 .project-card {
-  background: #020617;
-  border-radius: 12px;
+  padding: 0;
   overflow: hidden;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
@@ -157,12 +232,34 @@ h2 {
   object-fit: cover;
 }
 
-.project-card:hover {
-  transform: translateY(-8px);
-  box-shadow: 0 15px 30px rgba(56,189,248,0.25);
+.project-content {
+  padding: 1rem;
 }
 
-/* Animations */
+.project-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 15px 30px rgba(56,189,248,0.35);
+}
+
+/* =========================
+   SKILLS
+========================= */
+.skills-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.7rem;
+}
+
+.skills-grid span {
+  background: rgba(30, 41, 59, 0.8);
+  padding: 0.5rem 1rem;
+  border-radius: 999px;
+  border: 1px solid rgba(148,163,184,0.2);
+}
+
+/* =========================
+   ANIMATIONS
+========================= */
 .fade-in {
   opacity: 0;
   animation: fadeIn 1s forwards;
@@ -186,9 +283,19 @@ h2 {
   transform: translateY(0);
 }
 
-footer {
-  background: #020617;
-  text-align: center;
-  padding: 1rem;
+@keyframes gradientMove {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
 }
 
+/* =========================
+   FOOTER
+========================= */
+footer {
+  background: rgba(2, 6, 23, 0.8);
+  backdrop-filter: blur(10px);
+  text-align: center;
+  padding: 1rem;
+  border-top: 1px solid rgba(148,163,184,0.15);
+}
