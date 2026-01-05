@@ -283,6 +283,16 @@ p, li {
     padding-left: 0.8rem;
   }
 }
+/* =========================
+   CERTIFICATIONS
+========================= */
+.certification-item {
+  background: rgba(2,6,23,0.6);
+  backdrop-filter: blur(10px);
+  border-radius: 12px;
+  padding: 1.3rem;
+}
+
 
 
 
