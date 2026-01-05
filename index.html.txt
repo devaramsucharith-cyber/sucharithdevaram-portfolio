@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sucharith Devaram | Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <nav>
+    <h2 class="logo">Sucharith</h2>
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+  <h1 class="fade-in">Hi, I'm <span>Sucharith Devaram</span></h1>
+  <p class="fade-in delay-1">
+    Graduate Electrical Engineer | VLSI | DFT | RTL Design
+  </p>
+
+  <div class="hero-buttons fade-in delay-2">
+    <a href="#projects" class="btn">View Projects</a>
+    <a href="resume.pdf" class="btn-outline" download>Download Resume</a>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="reveal">
+  <h2>About Me</h2>
+  <p>
+    Graduate Electrical Engineer with hands-on experience in RTL design,
+    low-power VLSI systems, and digital system testing. Strong background in
+    DFT, ATPG, fault modeling, and PPA optimization using Synopsys and Cadence tools.
+  </p>
+</section>
+
+<!-- EDUCATION TIMELINE -->
+<section id="education" class="reveal">
+  <h2>Education</h2>
+  <div class="timeline">
+
+    <div class="timeline-item">
+      <span class="timeline-date">2024 – 2026</span>
+      <div class="timeline-content">
+        <h3>California State University, Fresno</h3>
+        <p>M.S. Electrical & Computer Engineering</p>
+        <p>GPA: 3.0 / 4.0</p>
+      </div>
+    </div>
+
+    <div class="timeline-item">
+      <span class="timeline-date">2020 – 2024</span>
+      <div class="timeline-content">
+        <h3>Kakatiya Institute of Technology & Science</h3>
+        <p>B.Tech Electronics & Communication Engineering</p>
+        <p>GPA: 3.5 / 4.0</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- PROJECTS WITH IMAGES -->
+<section id="projects" class="reveal">
+  <h2>Projects</h2>
+
+  <div class="project-grid">
+
+    <div class="project-card">
+      <img src="images/robotics.jpg" alt="Robotics Project">
+      <div class="project-content">
+        <h3>Multi-Arm Robotic Harvest Optimization</h3>
+        <p>MATLAB optimization using VAM–MODI reducing travel distance by 18%.</p>
+      </div>
+    </div>
+
+    <div class="project-card">
+      <img src="images/shift-register.jpg" alt="Shift Register Project">
+      <div class="project-content">
+        <h3>Shift Register Design & Testing</h3>
+        <p>RTL-to-gate flow with scan insertion and 98.72% fault coverage.</p>
+      </div>
+    </div>
+
+    <div class="project-card">
+      <img src="images/dff.jpg" alt="D Flip-Flop Project">
+      <div class="project-content">
+        <h3>Low-Power Fault-Tolerant D Flip-Flop</h3>
+        <p>SVL-based low-leakage design with parity fault detection.</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills" class="reveal">
+  <h2>Skills</h2>
+  <div class="skills-grid">
+    <span>Verilog</span>
+    <span>SystemVerilog</span>
+    <span>VHDL</span>
+    <span>MATLAB</span>
+    <span>Python</span>
+    <span>Synopsys DC</span>
+    <span>TetraMAX</span>
+    <span>ModelSim</span>
+    <span>Cadence Virtuoso</span>
+    <span>DFT</span>
+    <span>ATPG</span>
+  </div>
+</section>
+
+<!-- EXPERIENCE TIMELINE -->
+<section id="experience" class="reveal">
+  <h2>Experience</h2>
+  <div class="timeline">
+    <div class="timeline-item">
+      <span class="timeline-date">2025 – Present</span>
+      <div class="timeline-content">
+        <h3>Supplemental Instruction Leader – ECE 90</h3>
+        <p>California State University, Fresno</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="reveal">
+  <h2>Contact</h2>
+  <p>Email: devaramsucharith@mail.fresnostate.edu</p>
+  <p>Phone: +1 (559) 293-6056</p>
+  <p>Location: Fresno, CA</p>
+</section>
+
+<footer>
+  <p>© 2026 Sucharith Devaram</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
