@@ -4,10 +4,11 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Entry-Level Physical Design & Verification Engineer | Sucharith Devaram</title>
-<meta
-  name="description"
-  content="Entry-level Physical Design and Verification Engineer with hands-on experience in RTL design, synthesis, timing analysis, DFT, and semiconductor-focused academic projects."
->
+
+  <meta
+    name="description"
+    content="Entry-level Physical Design and Verification Engineer with hands-on experience in RTL design, synthesis, timing analysis, DFT, and semiconductor-focused academic projects."
+  >
 
   <link rel="stylesheet" href="style.css">
 </head>
@@ -15,7 +16,7 @@
 
 <header>
   <nav>
-    <h2 class="logo">Sucharith</h2>
+    <h2 class="logo">Sucharith Devaram</h2>
     <ul>
       <li><a href="#about">About</a></li>
       <li><a href="#education">Education</a></li>
@@ -27,7 +28,10 @@
   </nav>
 </header>
 
+<!-- HERO -->
 <section class="hero">
+  <img src="images/profile.jpg" alt="Sucharith Devaram" class="profile-pic">
+
   <h1 class="fade-in">
     Entry-Level <span>Physical Design & Verification Engineer</span>
   </h1>
@@ -48,39 +52,32 @@
   </div>
 </section>
 
-
+<!-- ABOUT -->
 <section id="about" class="reveal">
   <h2>About Me</h2>
 
   <p>
     I am a graduate Electrical & Computer Engineering student with a focused interest in
-    <b>Physical Design and Digital Verification</b> for semiconductor systems. My academic
-    training and project work are centered around understanding the complete digital design
-    flow — from RTL development to synthesis, timing analysis, and testability-aware design.
+    <b>Physical Design and Digital Verification</b> for semiconductor systems.
   </p>
 
   <p>
-    Through hands-on coursework and projects, I have worked with industry-standard EDA tools
-    to design, simulate, and analyze digital circuits. My experience includes RTL design in
-    Verilog/SystemVerilog, functional verification using simulation-based workflows, scan-based
-    DFT concepts, and evaluating power, performance, and area trade-offs.
+    My experience includes RTL design in Verilog/SystemVerilog, functional verification,
+    scan-based DFT concepts, synthesis, timing analysis, and PPA evaluation using
+    industry-standard EDA tools.
   </p>
 
   <p>
-    I am actively seeking entry-level opportunities or internships in
-    <b>Physical Design or Verification Engineering</b>, where I can contribute to silicon-ready
-    designs while continuing to strengthen my understanding of timing closure, layout-aware
-    optimization, and robust verification methodologies.
+    I am actively seeking entry-level roles or internships in
+    <b>Physical Design or Verification Engineering</b> within the semiconductor domain.
   </p>
 </section>
-
 
 <!-- EDUCATION -->
 <section id="education" class="reveal">
   <h2>Education</h2>
 
   <div class="timeline">
-
     <div class="timeline-item">
       <div class="timeline-dot"></div>
       <div class="timeline-content">
@@ -100,219 +97,76 @@
         <p>GPA: 3.5 / 4.0</p>
       </div>
     </div>
-
   </div>
 </section>
 
+<!-- PROJECTS -->
 <section id="projects" class="reveal">
   <h2>Projects</h2>
 
-  <!-- PROJECT 1 -->
   <div class="project-card">
     <h3>Scan-Based Shift Register Design & Testability Analysis</h3>
-
-    <p><b>Problem:</b><br>
-      Design a sequential digital module that is functionally correct and
-      testable under manufacturing fault conditions.
-    </p>
-
-    <p><b>Approach:</b><br>
-      Developed an 8-bit SIPO shift register using Verilog and implemented
-      scan-chain based Design-for-Testability using a TCL-driven Synopsys flow.
-      Functional verification and ATPG pattern generation were performed using
-      industry-standard tools.
-    </p>
-
-    <p><b>Outcome:</b><br>
-      Achieved 98.72% stuck-at fault coverage using TetraMAX ATPG.
-      Analyzed power, performance, area, and test coverage trade-offs at the
-      gate level.
-    </p>
-
-    <p><b>Skills & Tools:</b><br>
-      Verilog, RTL Design, Scan Insertion, ATPG, TetraMAX,
-      Synopsys Design Compiler, ModelSim
-    </p>
+    <p><b>Problem:</b> Ensure functional correctness and manufacturability.</p>
+    <p><b>Approach:</b> RTL design, scan insertion, ATPG using Synopsys tools.</p>
+    <p><b>Outcome:</b> 98.72% fault coverage with PPA analysis.</p>
+    <p><b>Skills:</b> Verilog, DFT, ATPG, ModelSim, TetraMAX</p>
   </div>
 
-  <!-- PROJECT 2 -->
   <div class="project-card">
-    <h3>Low-Power & Fault-Tolerant D Flip-Flop Design</h3>
-
-    <p><b>Problem:</b><br>
-      Reduce leakage power in sequential elements while maintaining reliable
-      operation in sub-45nm CMOS technology.
-    </p>
-
-    <p><b>Approach:</b><br>
-      Designed a D Flip-Flop using the Modified Self-Voltage Level (SVL)
-      technique and integrated parity-based fault detection.
-      Performed RTL simulation, synthesis, timing, and power analysis.
-    </p>
-
-    <p><b>Outcome:</b><br>
-      Demonstrated reduced leakage power compared to conventional designs and
-      validated functionality through simulation and transistor-level analysis.
-    </p>
-
-    <p><b>Skills & Tools:</b><br>
-      Low-Power Design, SVL Technique, Timing Analysis,
-      Synopsys Design Compiler, ModelSim, Cadence Virtuoso
-    </p>
+    <h3>Low-Power & Fault-Tolerant D Flip-Flop</h3>
+    <p><b>Problem:</b> Reduce leakage in sub-45nm CMOS.</p>
+    <p><b>Approach:</b> SVL-based design with parity fault detection.</p>
+    <p><b>Outcome:</b> Reduced leakage and validated timing.</p>
+    <p><b>Skills:</b> Low-power design, timing analysis, Cadence Virtuoso</p>
   </div>
 
-  <!-- PROJECT 3 -->
   <div class="project-card">
-    <h3>Multi-Arm Robotic Harvest Optimization (MATLAB)</h3>
-
-    <p><b>Problem:</b><br>
-      Optimize coordination between multiple robotic arms to minimize total
-      travel distance and improve system efficiency.
-    </p>
-
-    <p><b>Approach:</b><br>
-      Developed a MATLAB-based optimization model using linear programming
-      (VAM–MODI) techniques and evaluated multiple real-time scenarios.
-    </p>
-
-    <p><b>Outcome:</b><br>
-      Achieved approximately 18% reduction in total travel distance and
-      validated scalability through performance analysis.
-    </p>
-
-    <p><b>Skills & Tools:</b><br>
-      MATLAB, Optimization Algorithms, Performance Analysis
-    </p>
+    <h3>Multi-Arm Robotic Harvest Optimization</h3>
+    <p><b>Outcome:</b> 18% reduction in total travel distance.</p>
+    <p><b>Skills:</b> MATLAB, optimization algorithms</p>
   </div>
 </section>
 
-
+<!-- SKILLS -->
 <section id="skills" class="reveal">
   <h2>Technical Skills</h2>
 
-  <div class="skills-category">
-    <h3>HDL & Programming</h3>
-    <div class="skills-grid">
-      <span>Verilog</span>
-      <span>SystemVerilog</span>
-      <span>VHDL</span>
-      <span>MATLAB</span>
-      <span>Python</span>
-    </div>
-  </div>
-
-  <div class="skills-category">
-    <h3>EDA Tools</h3>
-    <div class="skills-grid">
-      <span>Synopsys Design Compiler</span>
-      <span>TetraMAX</span>
-      <span>ModelSim</span>
-      <span>Cadence Virtuoso</span>
-      <span>Innovus (Exposure)</span>
-    </div>
-  </div>
-
-  <div class="skills-category">
-    <h3>Physical Design & Verification Concepts</h3>
-    <div class="skills-grid">
-      <span>RTL Design</span>
-      <span>Functional Verification</span>
-      <span>Timing Analysis</span>
-      <span>Scan-Based DFT</span>
-      <span>ATPG</span>
-      <span>Gate-Level Simulation</span>
-      <span>Power-Performance-Area (PPA) Analysis</span>
-    </div>
-  </div>
-
-  <div class="skills-category">
-    <h3>Semiconductor & Testing</h3>
-    <div class="skills-grid">
-      <span>Sub-45nm CMOS</span>
-      <span>Low-Power Design Techniques</span>
-      <span>Fault Modeling</span>
-      <span>SEM & Impedance Spectroscopy</span>
-    </div>
+  <div class="skills-grid">
+    <span>Verilog</span>
+    <span>SystemVerilog</span>
+    <span>RTL Design</span>
+    <span>Functional Verification</span>
+    <span>Timing Analysis</span>
+    <span>DFT & ATPG</span>
+    <span>Synopsys DC</span>
+    <span>TetraMAX</span>
+    <span>ModelSim</span>
+    <span>Cadence Virtuoso</span>
   </div>
 </section>
 
-<section id="resume-snapshot" class="reveal">
-  <h2>Resume Snapshot</h2>
-
-  <div class="snapshot-block">
-    <h3>Education</h3>
-    <p>
-      <b>M.S. Electrical & Computer Engineering</b>, California State University, Fresno (Expected 2026)
-    </p>
-    <p>
-      <b>B.Tech Electronics & Communication Engineering</b>, Kakatiya Institute of Technology & Science (2024)
-    </p>
-  </div>
-
-  <div class="snapshot-block">
-    <h3>Core Focus Areas</h3>
-    <ul>
-      <li>Physical Design fundamentals including timing analysis and PPA trade-offs</li>
-      <li>RTL design and functional verification using Verilog/SystemVerilog</li>
-      <li>Scan-based Design-for-Testability and ATPG workflows</li>
-      <li>Low-power digital circuit techniques in sub-45nm CMOS</li>
-    </ul>
-  </div>
-
-  <div class="snapshot-block">
-    <h3>Representative Projects</h3>
-    <ul>
-      <li>
-        <b>Scan-Based Shift Register Design:</b> RTL-to-gate flow with 98.72% fault coverage using ATPG
-      </li>
-      <li>
-        <b>Low-Power D Flip-Flop Design:</b> SVL-based leakage reduction with timing and power analysis
-      </li>
-      <li>
-        <b>Robotic Optimization System:</b> Algorithmic performance optimization using MATLAB
-      </li>
-    </ul>
-  </div>
-
-  <div class="snapshot-block">
-    <h3>Target Roles</h3>
-    <p>
-      Entry-Level <b>Physical Design Engineer</b> or <b>Verification Engineer</b> roles in the
-      semiconductor and electrical engineering domain.
-    </p>
-  </div>
-</section>
+<!-- CERTIFICATIONS -->
 <section id="certifications" class="reveal">
   <h2>Certifications</h2>
 
   <div class="cert-row">
-    <img
-      src="images/badges/systemverilog-synopsys.png"
-      alt="SystemVerilog for RTL Design – Synopsys"
-      class="cert-icon"
-    >
-
+    <img src="images/badges/systemverilog-synopsys.png" class="cert-icon" alt="Synopsys Badge">
     <div class="cert-content">
       <h3>
-        <a
-          href="images/badges/systemverilog-synopsys.png"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
+        <a href="images/badges/systemverilog-synopsys.png" target="_blank">
           SystemVerilog for RTL Design
         </a>
       </h3>
-
       <p class="cert-meta">Synopsys • Associate Level • 2023</p>
-
       <p class="cert-desc">
-        Validates proficiency in synthesizable SystemVerilog constructs,
-        RTL coding practices, and simulation-based verification workflows.
+        Validates synthesizable SystemVerilog, RTL practices, and verification workflows.
       </p>
-
-      <a
-        href="images/badges/
-
+      <a class="cert-link" href="images/badges/systemverilog-synopsys.png" target="_blank">
+        View credential →
+      </a>
+    </div>
+  </div>
+</section>
 
 <!-- EXPERIENCE -->
 <section id="experience" class="reveal">
@@ -325,57 +179,26 @@
         <span class="timeline-date">Jan 2025 – Present</span>
         <h3>Supplemental Instruction Leader (ECE 90)</h3>
         <p>California State University, Fresno</p>
-        <ul>
-          <li>Led collaborative problem-solving sessions in circuit analysis.</li>
-          <li>Developed structured learning materials to improve student understanding.</li>
-        </ul>
       </div>
     </div>
   </div>
 </section>
 
+<!-- CONTACT -->
 <section id="contact" class="reveal">
   <h2>Contact</h2>
 
-  <p>
-    I am open to entry-level opportunities and internships in
-    <b>Physical Design</b> and <b>Verification Engineering</b>.
-    Feel free to reach out for roles, collaborations, or technical discussions.
-  </p>
-
   <div class="contact-links">
-    <p>
-      📧 Email:
-      <a href="mailto:devaramsucharith@mail.fresnostate.edu">
-        devaramsucharith@mail.fresnostate.edu
-      </a>
-    </p>
-
-    <p>
-      🔗 LinkedIn:
-      <a href="https://www.linkedin.com/" target="_blank">
-        linkedin.com/in/your-linkedin
-      </a>
-    </p>
-
-    <p>
-      💻 GitHub:
-      <a href="https://github.com/devaramsucharith-cyber" target="_blank">
-        github.com/devaramsucharith-cyber
-      </a>
-    </p>
+    <p>Email: <a href="mailto:devaramsucharith@mail.fresnostate.edu">devaramsucharith@mail.fresnostate.edu</a></p>
+    <p>GitHub: <a href="https://github.com/devaramsucharith-cyber" target="_blank">github.com/devaramsucharith-cyber</a></p>
+    <p>LinkedIn: <a href="https://www.linkedin.com/" target="_blank">linkedin.com</a></p>
   </div>
 </section>
 
+<footer>
+  © 2026 Sucharith Devaram
+</footer>
 
 <script src="script.js"></script>
 </body>
 </html>
-
-
-
-
-
-
-
-
