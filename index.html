@@ -44,22 +44,31 @@
 </section>
 
 
-<!-- ABOUT -->
 <section id="about" class="reveal">
   <h2>About Me</h2>
+
   <p>
-    I am a Graduate Electrical & Computer Engineering student at California State University, Fresno,
-    with a strong focus on <b>VLSI design, digital system testing, and low-power circuit optimization</b>.
-    My academic and project experience spans RTL design, scan-based DFT, ATPG, and fault modeling using
-    industry-standard EDA tools such as Synopsys Design Compiler, TetraMAX, ModelSim, and Cadence Virtuoso.
+    I am a graduate Electrical & Computer Engineering student with a focused interest in
+    <b>Physical Design and Digital Verification</b> for semiconductor systems. My academic
+    training and project work are centered around understanding the complete digital design
+    flow — from RTL development to synthesis, timing analysis, and testability-aware design.
   </p>
+
   <p>
-    I enjoy bridging theory with hands-on implementation — from transistor-level circuit validation
-    to system-level optimization problems. I am actively seeking opportunities in
-    <b>VLSI design, DFT, semiconductor engineering, and hardware verification</b>
-    where I can contribute to reliable, high-performance digital systems.
+    Through hands-on coursework and projects, I have worked with industry-standard EDA tools
+    to design, simulate, and analyze digital circuits. My experience includes RTL design in
+    Verilog/SystemVerilog, functional verification using simulation-based workflows, scan-based
+    DFT concepts, and evaluating power, performance, and area trade-offs.
+  </p>
+
+  <p>
+    I am actively seeking entry-level opportunities or internships in
+    <b>Physical Design or Verification Engineering</b>, where I can contribute to silicon-ready
+    designs while continuing to strengthen my understanding of timing closure, layout-aware
+    optimization, and robust verification methodologies.
   </p>
 </section>
+
 
 <!-- EDUCATION -->
 <section id="education" class="reveal">
@@ -90,59 +99,138 @@
   </div>
 </section>
 
-<!-- PROJECTS -->
 <section id="projects" class="reveal">
   <h2>Projects</h2>
 
+  <!-- PROJECT 1 -->
   <div class="project-card">
-    <h3>Multi-Arm Robotic Harvest Optimization (MATLAB)</h3>
-    <ul>
-      <li>Designed and implemented a MATLAB-based optimization model using linear programming (VAM–MODI).</li>
-      <li>Optimized coordination of three robotic arms, achieving an 18% reduction in total travel distance.</li>
-      <li>Evaluated multiple real-time scenarios to analyze scalability, performance, and robustness.</li>
-      <li>Validated feasibility through runtime analysis and comparative optimization metrics.</li>
-    </ul>
+    <h3>Scan-Based Shift Register Design & Testability Analysis</h3>
+
+    <p><b>Problem:</b><br>
+      Design a sequential digital module that is functionally correct and
+      testable under manufacturing fault conditions.
+    </p>
+
+    <p><b>Approach:</b><br>
+      Developed an 8-bit SIPO shift register using Verilog and implemented
+      scan-chain based Design-for-Testability using a TCL-driven Synopsys flow.
+      Functional verification and ATPG pattern generation were performed using
+      industry-standard tools.
+    </p>
+
+    <p><b>Outcome:</b><br>
+      Achieved 98.72% stuck-at fault coverage using TetraMAX ATPG.
+      Analyzed power, performance, area, and test coverage trade-offs at the
+      gate level.
+    </p>
+
+    <p><b>Skills & Tools:</b><br>
+      Verilog, RTL Design, Scan Insertion, ATPG, TetraMAX,
+      Synopsys Design Compiler, ModelSim
+    </p>
   </div>
 
-  <div class="project-card">
-    <h3>Shift Register Design & Testability Analysis</h3>
-    <ul>
-      <li>Designed and verified an 8-bit SIPO shift register using a complete RTL-to-gate-level flow.</li>
-      <li>Implemented scan-chain based Design-for-Testability using TCL-driven Synopsys flow.</li>
-      <li>Generated ATPG patterns using TetraMAX, achieving 98.72% stuck-at fault coverage.</li>
-      <li>Performed power, area, timing, and fault coverage analysis.</li>
-    </ul>
-  </div>
-
+  <!-- PROJECT 2 -->
   <div class="project-card">
     <h3>Low-Power & Fault-Tolerant D Flip-Flop Design</h3>
-    <ul>
-      <li>Designed a low-leakage D Flip-Flop using Modified Self-Voltage Level (SVL) technique.</li>
-      <li>Integrated parity-based fault detection to enhance reliability of digital systems.</li>
-      <li>Conducted RTL simulation, synthesis, and power analysis using Synopsys Design Compiler.</li>
-      <li>Validated transistor-level behavior using Cadence Virtuoso.</li>
-    </ul>
+
+    <p><b>Problem:</b><br>
+      Reduce leakage power in sequential elements while maintaining reliable
+      operation in sub-45nm CMOS technology.
+    </p>
+
+    <p><b>Approach:</b><br>
+      Designed a D Flip-Flop using the Modified Self-Voltage Level (SVL)
+      technique and integrated parity-based fault detection.
+      Performed RTL simulation, synthesis, timing, and power analysis.
+    </p>
+
+    <p><b>Outcome:</b><br>
+      Demonstrated reduced leakage power compared to conventional designs and
+      validated functionality through simulation and transistor-level analysis.
+    </p>
+
+    <p><b>Skills & Tools:</b><br>
+      Low-Power Design, SVL Technique, Timing Analysis,
+      Synopsys Design Compiler, ModelSim, Cadence Virtuoso
+    </p>
+  </div>
+
+  <!-- PROJECT 3 -->
+  <div class="project-card">
+    <h3>Multi-Arm Robotic Harvest Optimization (MATLAB)</h3>
+
+    <p><b>Problem:</b><br>
+      Optimize coordination between multiple robotic arms to minimize total
+      travel distance and improve system efficiency.
+    </p>
+
+    <p><b>Approach:</b><br>
+      Developed a MATLAB-based optimization model using linear programming
+      (VAM–MODI) techniques and evaluated multiple real-time scenarios.
+    </p>
+
+    <p><b>Outcome:</b><br>
+      Achieved approximately 18% reduction in total travel distance and
+      validated scalability through performance analysis.
+    </p>
+
+    <p><b>Skills & Tools:</b><br>
+      MATLAB, Optimization Algorithms, Performance Analysis
+    </p>
   </div>
 </section>
 
-<!-- SKILLS -->
+
 <section id="skills" class="reveal">
   <h2>Technical Skills</h2>
-  <div class="skills-grid">
-    <span>Verilog</span>
-    <span>SystemVerilog</span>
-    <span>VHDL</span>
-    <span>MATLAB</span>
-    <span>Python</span>
-    <span>Synopsys Design Compiler</span>
-    <span>TetraMAX</span>
-    <span>ModelSim</span>
-    <span>Cadence Virtuoso</span>
-    <span>RTL Design</span>
-    <span>DFT & ATPG</span>
-    <span>Low-Power VLSI</span>
+
+  <div class="skills-category">
+    <h3>HDL & Programming</h3>
+    <div class="skills-grid">
+      <span>Verilog</span>
+      <span>SystemVerilog</span>
+      <span>VHDL</span>
+      <span>MATLAB</span>
+      <span>Python</span>
+    </div>
+  </div>
+
+  <div class="skills-category">
+    <h3>EDA Tools</h3>
+    <div class="skills-grid">
+      <span>Synopsys Design Compiler</span>
+      <span>TetraMAX</span>
+      <span>ModelSim</span>
+      <span>Cadence Virtuoso</span>
+      <span>Innovus (Exposure)</span>
+    </div>
+  </div>
+
+  <div class="skills-category">
+    <h3>Physical Design & Verification Concepts</h3>
+    <div class="skills-grid">
+      <span>RTL Design</span>
+      <span>Functional Verification</span>
+      <span>Timing Analysis</span>
+      <span>Scan-Based DFT</span>
+      <span>ATPG</span>
+      <span>Gate-Level Simulation</span>
+      <span>Power-Performance-Area (PPA) Analysis</span>
+    </div>
+  </div>
+
+  <div class="skills-category">
+    <h3>Semiconductor & Testing</h3>
+    <div class="skills-grid">
+      <span>Sub-45nm CMOS</span>
+      <span>Low-Power Design Techniques</span>
+      <span>Fault Modeling</span>
+      <span>SEM & Impedance Spectroscopy</span>
+    </div>
   </div>
 </section>
+
 
 <!-- EXPERIENCE -->
 <section id="experience" class="reveal">
@@ -179,4 +267,5 @@
 <script src="script.js"></script>
 </body>
 </html>
+
 
