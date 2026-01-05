@@ -237,5 +237,52 @@ footer {
 .snapshot-block li {
   margin-bottom: 0.4rem;
 }
+/* =========================
+   MOBILE & VISUAL POLISH
+========================= */
+
+/* Improve overall text readability */
+p, li {
+  font-size: 1rem;
+}
+
+/* Better spacing between sections on mobile */
+@media (max-width: 768px) {
+  section {
+    padding: 4rem 1.5rem;
+  }
+
+  h1 {
+    font-size: 1.9rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  .hero {
+    padding-top: 5rem;
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+    gap: 0.8rem;
+  }
+
+  .btn,
+  .btn-outline {
+    width: 100%;
+    text-align: center;
+  }
+
+  .timeline-item {
+    gap: 0.8rem;
+  }
+
+  .timeline-content {
+    padding-left: 0.8rem;
+  }
+}
+
 
 
