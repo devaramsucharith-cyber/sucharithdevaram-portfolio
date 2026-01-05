@@ -358,6 +358,36 @@ p, li {
     height: 58px;
   }
 }
+.logo {
+  font-weight: bold;
+  color: #38bdf8;
+}
+
+.profile-pic {
+  width: 140px;
+  border-radius: 50%;
+  margin: 0 auto 1rem;
+  border: 3px solid #38bdf8;
+}
+
+.skills-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.7rem;
+}
+
+.skills-grid span {
+  background: rgba(30,41,59,0.85);
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+}
+
+.contact-links a {
+  color: #38bdf8;
+  text-decoration: none;
+}
+
+
 
 
 
