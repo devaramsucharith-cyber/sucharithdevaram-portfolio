@@ -6,10 +6,19 @@
 }
 
 body {
-  background: #0f172a;
+  background:
+    linear-gradient(
+      rgba(15, 23, 42, 0.85),
+      rgba(15, 23, 42, 0.85)
+    ),
+    url("images/backgrounds/mesh-bg.png");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
   color: #e5e7eb;
   line-height: 1.6;
 }
+
 
 header {
   background: #020617;
@@ -182,3 +191,4 @@ footer {
   text-align: center;
   padding: 1rem;
 }
+
