@@ -1,19 +1,16 @@
-// Smooth scrolling
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-  anchor.addEventListener("click", e => {
-    e.preventDefault();
-    document.querySelector(anchor.getAttribute("href"))
-      .scrollIntoView({ behavior: "smooth" });
-  });
-});
-
-// Reveal animation
+// Reveal on scroll
 const reveals = document.querySelectorAll(".reveal");
 
-window.addEventListener("scroll", () => {
+function revealOnScroll() {
   reveals.forEach(section => {
     const top = section.getBoundingClientRect().top;
-    const trigger = window.innerHeight * 0.85;
-    if (top < trigger) section.classList.add("active");
+    const triggerPoint = window.innerHeight * 0.85;
+
+    if (top < triggerPoint) {
+      section.classList.add("active");
+    }
   });
-});
+}
+
+window.addEventListener("scroll", revealOnScroll);
+window.addEventListener("load", revealOnScroll);
