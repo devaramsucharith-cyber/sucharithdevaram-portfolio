@@ -218,4 +218,24 @@ footer {
   padding: 1rem;
   margin-top: 2rem;
 }
+/* =========================
+   RESUME SNAPSHOT
+========================= */
+.snapshot-block {
+  margin-bottom: 1.8rem;
+}
+
+.snapshot-block h3 {
+  color: #cbd5f5;
+  margin-bottom: 0.5rem;
+}
+
+.snapshot-block ul {
+  padding-left: 1.2rem;
+}
+
+.snapshot-block li {
+  margin-bottom: 0.4rem;
+}
+
 
